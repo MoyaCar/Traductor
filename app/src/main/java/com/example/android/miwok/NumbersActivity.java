@@ -23,11 +23,13 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class NumbersActivity extends AppCompatActivity {
+    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
+
 
         // Create a list of words
         ArrayList<String> words = new ArrayList<String>();
@@ -42,18 +44,27 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("nine");
         words.add("ten");
 
+        ArrayList<Word_Class> twoWords = new ArrayList<>();
+        twoWords.add(new Word_Class("one", "lotte"));
+        twoWords.add(new Word_Class("one", "lotte"));
+        twoWords.add(new Word_Class("one", "lotte"));
+        twoWords.add(new Word_Class("one", "lotte"));
+        twoWords.add(new Word_Class("one", "lotte"));
+        twoWords.add(new Word_Class("one", "lotte"));
+
+
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
         // simple_list_item_1.xml layout resource defined in the Android framework.
         // This list item layout contains a single {@link TextView}, which the adapter will set to
         // display a single word.
-        ArrayAdapter<String> itemsAdapter =
-                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
+        ArrayAdapter<Word_Class> itemsAdapter =
+                new WordAdapter(this, twoWords);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
         // activity_numbers.xml layout file.
-        ListView listView = (ListView) findViewById(R.id.list);
+        listView = (ListView) findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the
         // {@link ListView} will display list items for each word in the list of words.
