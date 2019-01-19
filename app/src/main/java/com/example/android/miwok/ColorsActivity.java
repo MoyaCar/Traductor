@@ -31,14 +31,14 @@ public class ColorsActivity extends AppCompatActivity {
 
 
         ArrayList<Word_Class> twoWords = new ArrayList<>();
-        twoWords.add(new Word_Class("red", "wetetti"));
-        twoWords.add(new Word_Class("green", "chokokki"));
-        twoWords.add(new Word_Class("brown", "takaakki"));
-        twoWords.add(new Word_Class("gray", "topoppi"));
-        twoWords.add(new Word_Class("black", "kululli"));
-        twoWords.add(new Word_Class("white", "kelelli"));
-        twoWords.add(new Word_Class("dusty yellow", "topoose"));
-        twoWords.add(new Word_Class("mustard Yellow", "chiwiite"));
+        twoWords.add(new Word_Class("red", "wetetti", R.drawable.color_red));
+        twoWords.add(new Word_Class("green", "chokokki", R.drawable.color_green));
+        twoWords.add(new Word_Class("brown", "takaakki",R.drawable.color_brown));
+        twoWords.add(new Word_Class("gray", "topoppi", R.drawable.color_gray));
+        twoWords.add(new Word_Class("black", "kululli", R.drawable.color_black));
+        twoWords.add(new Word_Class("white", "kelelli", R.drawable.color_white));
+        twoWords.add(new Word_Class("dusty yellow", "topoose",R.drawable.color_dusty_yellow));
+        twoWords.add(new Word_Class("mustard Yellow", "chiwiite",R.drawable.color_mustard_yellow));
 
         WordAdapter colorsAdapter = new WordAdapter (this, twoWords);
 

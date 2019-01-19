@@ -34,23 +34,23 @@ public class NumbersActivity extends AppCompatActivity {
 
 
         ArrayList<Word_Class> twoWords = new ArrayList<>();
-        twoWords.add(new Word_Class("one", "lutti"));
-        twoWords.add(new Word_Class("two", "otiko"));
-        twoWords.add(new Word_Class("three", "tolookosu"));
-        twoWords.add(new Word_Class("four", "oyyisa"));
-        twoWords.add(new Word_Class("five", "massoka"));
-        twoWords.add(new Word_Class("six", "temmoka"));
-        twoWords.add(new Word_Class("seven", "kenekaku"));
-        twoWords.add(new Word_Class("eight", "kawinta"));
-        twoWords.add(new Word_Class("nine", "wo'e"));
-        twoWords.add(new Word_Class("ten", "na'aacha"));
+        twoWords.add(new Word_Class("one", "lutti",R.drawable.number_one));
+        twoWords.add(new Word_Class("two", "otiko",R.drawable.number_two));
+        twoWords.add(new Word_Class("three", "tolookosu",R.drawable.number_three));
+        twoWords.add(new Word_Class("four", "oyyisa",R.drawable.number_four));
+        twoWords.add(new Word_Class("five", "massoka",R.drawable.number_five));
+        twoWords.add(new Word_Class("six", "temmoka",R.drawable.number_six));
+        twoWords.add(new Word_Class("seven", "kenekaku",R.drawable.number_seven));
+        twoWords.add(new Word_Class("eight", "kawinta",R.drawable.number_eight));
+        twoWords.add(new Word_Class("nine", "wo'e",R.drawable.number_nine));
+        twoWords.add(new Word_Class("ten", "na'aacha",R.drawable.number_ten));
 
 
 
         WordAdapter wordAdapter = new WordAdapter(this, twoWords);
 
 
-        listView = (ListView) findViewById(R.id.list);
+        listView = (ListView) findViewById(R.id.list_numbers);
 
 
         listView.setAdapter(wordAdapter);

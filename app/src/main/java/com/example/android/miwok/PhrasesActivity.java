@@ -43,6 +43,7 @@ public class PhrasesActivity extends AppCompatActivity {
         WordAdapter phraseAdapter = new WordAdapter(this, twoWords);
 
         ListView phrasesLV = (ListView) findViewById(R.id.list_phrases);
+        phrasesLV.setBackgroundResource(R.color.category_phrases);
 
         phrasesLV.setAdapter(phraseAdapter);
 
