@@ -29,16 +29,16 @@ public class FamilyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_family);
 
         ArrayList<Word_Class> twoWords = new ArrayList<>();
-        twoWords.add(new Word_Class("father", "epe", R.drawable.family_father));
-        twoWords.add(new Word_Class("mother", "eta",R.drawable.family_mother));
-        twoWords.add(new Word_Class("son", "angsi",R.drawable.family_son));
-        twoWords.add(new Word_Class("daughter", "tune", R.drawable.family_daughter));
-        twoWords.add(new Word_Class("older brother", "taachi",R.drawable.family_older_brother));
-        twoWords.add(new Word_Class("younger brother", "chalitti",R.drawable.family_younger_brother));
-        twoWords.add(new Word_Class("older sister", "tete",R.drawable.family_older_sister));
-        twoWords.add(new Word_Class("younger sister", "kolliti",R.drawable.family_younger_sister));
-        twoWords.add(new Word_Class("grandmother", "ama", R.drawable.family_grandmother));
-        twoWords.add(new Word_Class("grandfather", "paapa",R.drawable.family_grandfather));
+        twoWords.add(new Word_Class("father", "epe", R.drawable.family_father, R.raw.family_father));
+        twoWords.add(new Word_Class("mother", "eta",R.drawable.family_mother, R.raw.family_mother));
+        twoWords.add(new Word_Class("son", "angsi",R.drawable.family_son, R.raw.family_son));
+        twoWords.add(new Word_Class("daughter", "tune", R.drawable.family_daughter, R.raw.family_daughter));
+        twoWords.add(new Word_Class("older brother", "taachi",R.drawable.family_older_brother, R.raw.family_older_brother));
+        twoWords.add(new Word_Class("younger brother", "chalitti",R.drawable.family_younger_brother, R.raw.family_younger_brother));
+        twoWords.add(new Word_Class("older sister", "tete",R.drawable.family_older_sister, R.raw.family_older_sister));
+        twoWords.add(new Word_Class("younger sister", "kolliti",R.drawable.family_younger_sister, R.raw.family_younger_sister));
+        twoWords.add(new Word_Class("grandmother", "ama", R.drawable.family_grandmother, R.raw.family_grandmother));
+        twoWords.add(new Word_Class("grandfather", "paapa",R.drawable.family_grandfather, R.raw.family_grandfather));
 
         WordAdapter familyAdapter = new WordAdapter(this, twoWords);
 
