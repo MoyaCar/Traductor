@@ -26,19 +26,21 @@ public class PhrasesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_phrases);
 
+
         ArrayList<Word_Class> twoWords = new ArrayList<>();
-        twoWords.add(new Word_Class("where are you going?", "minto wuksus",R.raw.phrase_where_are_you_going));
+        twoWords.add(new Word_Class("where are you going?", "minto wuksus", R.raw.phrase_where_are_you_going));
         twoWords.add(new Word_Class("What is your name", "tinne otaase'ne", R.raw.phrase_what_is_your_name));
-        twoWords.add(new Word_Class("My name is...", "oyaaset...",R.raw.phrase_my_name_is));
+        twoWords.add(new Word_Class("My name is...", "oyaaset...", R.raw.phrase_my_name_is));
         twoWords.add(new Word_Class("How are you feeling", "michekses?", R.raw.phrase_how_are_you_feeling));
         twoWords.add(new Word_Class("I'm feeling good.", "kuchi achit", R.raw.phrase_im_feeling_good));
         twoWords.add(new Word_Class("Are you coming?", "eenes'aa?", R.raw.phrase_are_you_coming));
         twoWords.add(new Word_Class("Yes, I'm coming.", "hee'eenem", R.raw.phrase_yes_im_coming));
-        twoWords.add(new Word_Class("I'm coming", "eenem",R.raw.phrase_im_coming));
+        twoWords.add(new Word_Class("I'm coming", "eenem", R.raw.phrase_im_coming));
         twoWords.add(new Word_Class("let's go.", "yoowutis", R.raw.phrase_lets_go));
-        twoWords.add(new Word_Class("Come here.", "enni'nem",R.raw.phrase_come_here));
+        twoWords.add(new Word_Class("Come here.", "enni'nem", R.raw.phrase_come_here));
 
         WordAdapter phraseAdapter = new WordAdapter(this, twoWords);
 
